@@ -1,3 +1,5 @@
+# Directories with ending "no"
+*.[no]
 # Logs
 logs
 *.log
