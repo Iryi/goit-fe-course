@@ -1,74 +1,53 @@
-body {
+
+.wrapper {
+  margin: 83px 314px 70px 318px;
+  max-width: 960px;
+  padding: 0;
   outline: none;
-  width: 900px;
-  border: 75px 150px 55px 150px;
-  margin: auto;
 }
+   
 
 /* <-- Начало css header--> */
 
 header {
-width: 900px;
+display: inline-block;
+margin-bottom: 104px;
 font-family: 'Playfair Display', serif;
 font-size: 14px;
 font-size-adjust: 0.75;
 font-stretch: semi-condensed;
-text-align: center;
 }
-
-ul {
-  padding: 0;
-  margin: 0;
-}
-
-li {
-  display: inline-block;
-  list-style-type: none;
-  padding-top: 75px;
-  margin: 0;
- }
 
 a {
   text-decoration: none;
   color: #626262; 
+  text-align: center;
 }
 
 a:hover {
   color: #25b4f5;
 }
 
-li.width-L {
-  padding-left: auto;
+a:first-child {
+  margin-left: 163px;
+  margin-right: 121px;
 }
 
-li.width-P {
-  padding-left: 118px;
-}
-
-li.width-M {
-  padding-left: 101px;
-}
-
-li.width-T {
-  padding-left: 91px;
-  padding-right: auto;
+a:nth-child(3){
+  margin-right: 103px;
+  margin-left: 95px;
 }
 
 /* <--Конец css header--> */
 
 /* <--Начало css content--> */
 
-div {
-  width: 960px;
-  margin: 0;
-  padding: 0;
-}
 
  .blogpost {
   display: inline-block;
-  margin: 0;
+  padding-right: 58px;
   width: 420px;
-  padding-right: 56px;
+  height: 280px;
   font-family: 'Playfair Display', sans-serif;
   text-align: left;
   color: #626262;
@@ -76,50 +55,43 @@ div {
 
 .blogpost figure {
   margin: 0;
-  border: 0;
-  padding-top: 100px;
-  width: 420px;
-  height: 280px;
-  }
-
-.blogpost:nth-child(n+5) {
-  padding-top: 4px;
 }
- 
+
 figcaption {
- margin: 0;
- padding: 28px 0;
+ margin: 25px auto;
  font-family: 'Ubuntu', sans-serif;
  font-size: 14px;
  font-stretch: ultra-condensed;
  text-align: left;
  color: #b4ad9e;
- }
+}
 
 h1 {
+ padding-bottom: 7px;
  font-size: 30px;
+ line-height: 25px;
  font-weight: lighter;
- padding-top: 62px;
- margin: 0;
- }
+}
 
 p {
- margin: 0;
  font-size: 14px;
- line-height: 24px;
- padding-top: 29px;
- padding-bottom: 28px;
+ line-height: 25px;
  letter-spacing: normal;
+}
+
+article:nth-child(n+3) {
+  padding-top: 132px;
+}
+
+article:nth-child(n+5) {
+  padding-top: 140px;
 }
 
 /* <--Конец css content--> */
 
-/* <--Начало css footer--> */
-
 footer {
-  width: 900px;
-  margin: 0;
-  padding: 20px 373px 70px 357px;
+  padding: 53px 370px 0 358px;
+ 
 }
 
 button {
@@ -133,4 +105,3 @@ button {
   border-color: #626262;
   border-width: 1px;
 }
-/* <--Конец css footer--> */
