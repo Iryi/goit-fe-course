@@ -130,7 +130,6 @@ h3+p,
   font-size: 15px;
   color: #999999;
   font-weight: 400;
-  line-break: 24px;
   text-transform: capitalize;
 }
 
@@ -232,7 +231,7 @@ ul.opacity-icons li:hover {
 footer {
   display: flex;
   margin: 150px 0 0 0;
-  padding: 15px auto;
+  padding: 15px 0;
   justify-content: space-between;
   align-items: center;
   width: 100%;
@@ -247,7 +246,7 @@ footer span {
   color: #f38181;
 }
 
-input[type=mail] {
+.email {
   width: 230px;
   height: 33px;
   padding: 5px;
@@ -259,7 +258,7 @@ input[type=mail] {
   font-weight: 400;
   line-height: 24px;
 }
-input[type="submit"] {
+.subscribe {
   width: 150px;
   padding: 15px;
   border: 0;
@@ -271,7 +270,7 @@ input[type="submit"] {
   background-color: #95e1d3;
 }
 
-input[type="submit"]:hover {
+.subscribe:hover {
   background-color: #f38181;
   cursor: pointer; 
 }
