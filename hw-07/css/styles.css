@@ -143,7 +143,7 @@ h2 {
   width: 455px;
   height: 30px;
   padding: 5px;
-  border: 1px solid solid #cccccc;
+  border: 1px solid solid #ff8d8d;
   border-radius: 3px;
   background-color: #ffffff;
   color: #bbbbbb;
@@ -163,6 +163,18 @@ h2 {
   text-transform: uppercase;
   font-weight: 700;
   color: #bbbbbb;
+}
+
+.user__name:valid,
+.user__email:valid, 
+.textarea:valid {
+   outline: green;
+}
+
+.user__name:invalid,
+.user__email:invalid, 
+.textarea:invalid {
+  outline: red;
 }
 
 .button {
