@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./woff_fonts/Montserrat-Regular.woff') format('woff');
+  font-family: 'Montserrat-Bold', 'Larke Sans Bold';
+  src: url('./woff_fonts/Montserrat-Bold.woff'), format('woff');
+  src: url('./woff_fonts/Larke Sans Bold.woff') format('woff');
+  font-family: 'DroidSerif Italic';
+  src: url('./woff_fonts/DroidSerif-Italic.woff') format('woff');
+  font-family: 'Roboto Slab';
+  src: url('./woff_fonts/RobotoSlab-Regular.woff') format('woff');
+}
