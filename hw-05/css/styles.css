@@ -1,47 +1,23 @@
+.common {
+  margin: 0 auto;
+  width: 1600px;
+}
 
-html {
+.site-bar {
+  height: 90px; 
+  padding-top: 45px; 
+}
+
+
+.menu-wrapper {
   box-sizing: border-box;
-  min-height:100vh;
-}
-
-body {
-  margin: 0;
-  width: 100rem;
-}
-
-.site-bar { 
   position: relative;
-  display: inline-block;
-  top: 2.8125rem;
-  width: 100%;
-  height: 5.625rem;
-  left: 0;
 }
 
 .Logo {
   position: absolute;
-  left: 15.3125rem;
-}
-
-.menu-wrapper {
- position: absolute;
- left: 55.375rem;
-}
-
-.Logo::first-letter {
- font-family: 'Roboto Black', sans-serif;
- font-weight: 600;
- color: #1abc9c;
-}
-
-.Logo a {
-  font-family: 'Roboto', sans-serif;
-  color: #555252;
-  font-size: 1.875rem;
-  font-weight: 300;
-  line-height: 2rem;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
+  left: 0;
+  content: url('../img/logo.png');
 }
 
 a {
@@ -49,16 +25,22 @@ a {
   text-decoration: none;
 }
 
-.menu-wrapper a {
-  box-sizing: border-box;
-  padding-right: 1.875rem;
+.menu_list {
+  position: absolute;
+  right: 0;
+}
+
+.menu_item {
+  display: inline-block;
+  padding-right: 30px;
   font-family: 'Open Sans', sans-serif; 
-  font-size: 0.875rem;
+  font-size: 14px;
   font-weight: 700;
-  line-height: 0.6875rem;
+  line-height: 14px;
   letter-spacing: -0.28px;
   color: #0f0101;
   text-transform: uppercase;
+  list-style-type: none;
 }
 
 .menu-wrapper a:hover {
@@ -66,39 +48,44 @@ a {
 }
 
 ul {
-  padding: 0;
+  margin: 0;
  }
 
 .slider {
   position: relative;
   left: 0;
-  height: 37.5rem;
-  width: 100rem;
+  height: 600px;
+  width: 100%;
   overflow: hidden;
   margin: 0;
+  background: url('../img/background.png') no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+.slides{
+  position: relative;
 }
 
 .slides-image {
-  position: relative;
-  height: 37.5rem;
+
+  height: 600px;
   width: 100%;
-  object-fit: cover;
-  list-style-type: none;
-  z-index: 1;
 }
 
 .cover_image {
   position: absolute;
-  height: 37.5rem;
+  height: 600px;
   width: 100%;
-  background-color: rgb(0, 0, 0, 2);
+  background-color: rgb(0, 0, 2);
   opacity: 0;
   top: 0;
   z-index: 3;
 }
 
 .slider:hover .cover_image {
-  opacity: 0.52;
+ opacity: 0.52;
+ transition: 200ms ease-in;
 }
 
 .offers {
@@ -106,18 +93,18 @@ ul {
   top: 25%;
   left:25%;
   transform: translateY(80%);
-  height: 6.25rem;
+  height: 100px;
   z-index: 8;
 }
 
 .offer_tours {
   margin: 0;
   font-family: "Roboto Black", sans-serif;
-  font-size: 2.75rem;
+  font-size: 44px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: -3.20px;
-  line-height: 2.825rem;
+  line-height: 45px;
   color: #fff;
   opacity: 1;
  }
@@ -126,7 +113,7 @@ ul {
   position: absolute;
   color: #ffffff;
   font-family: 'Roboto-Light', sans-serif;
-  font-size: 1.5rem;
+  font-size: 24px;
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: -0.48px;
@@ -149,7 +136,7 @@ color: #ff7200;
   color: #ffffff;
   font-size: 100px;
   font-weight: 400;
-  line-height: 0.6875rem;
+  line-height: 11px;
   text-transform: uppercase;
   letter-spacing: -2px;
   overflow: hidden;
@@ -157,11 +144,11 @@ color: #ff7200;
 }
 
 .slider_prev {
-  left: 15%;
+  left: 0;
 }
 
 .slider_next {
-  right: 15%;
+  right: 0;
 }
 
 .slider-ctrl:hover {
@@ -182,24 +169,23 @@ color: #ff7200;
   text-align: center;
   font-family: 'Roboto Black', sans-serif;
   color: #515151;
-  font-size: 3rem;
+  font-size: 48px;
   font-weight: 700;
   letter-spacing: -3.96px;
   text-transform: uppercase;
-  line-height: 3rem;
+  line-height: 48px;
 }
 
 .name_container::after {
   display: block;
-  width: 10.25rem;
-  height: 0.4375rem;
+  width: 164px;
+  height: 7px;
   background-color: #1abc9c;
   content: "";
-  margin: 1.875rem auto;
+  margin: 30px auto;
 }
 
 .container-wrapper {
-  padding: 9.25rem auto 5.25rem ;
   outline: none;
   height: 400px;
 }
@@ -208,16 +194,16 @@ color: #ff7200;
   float: left;
   position: relative;
   left: 15%;
-  width: 15.9375rem;
-  height: 20.1875rem;
-  margin: 0 1.875rem 1.875rem 0;
+  width: 255px;
+  height: 323px;
+  margin: 0 30px 30px 0;
   outline: none;
   z-index: 10;
- }
+}
 
- .container::after {
-   clear: left;
- }
+.container::after {
+  clear: left;
+}
 
 .container img {
   position: absolute;
@@ -232,13 +218,13 @@ color: #ff7200;
 .name-price {
   position: absolute;
   bottom: 0;
-  width: 15.9375rem;
-  height:2.5rem;
+  width: 255px;
+  height: 40px;
   font-family: 'Roboto Black', sans-serif;
   background: rgb( 50, 50, 50);
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 600;
-  line-height: 2.5rem;
+  line-height: 40px;
   letter-spacing: -0.36px;
   color: #ffffff;
   text-transform: uppercase;
@@ -248,16 +234,16 @@ color: #ff7200;
 .name {
   position: absolute;
   left: 0;
-  padding: 0 0.75rem;
- }
+  padding: 0 12px;
+}
 
 .price {
   position: absolute;
   right:0;
-  width: 3.4375rem;
+  width: 55px;
   text-align: center;
   background: rgba(150, 150, 150, 0.44);
- }
+}
 
 
 .opacity-layer {
@@ -301,7 +287,7 @@ ul.opacity-icons li {
 
 .add_to_card {
   position: absolute;
-  top: 12%;
+  top: 40%;
   left: 35%;
   text-align: right;
   font-family: 'Open Sans', sans-serif;
@@ -316,35 +302,39 @@ ul.opacity-icons li {
  background-color: #1abc9c;
  cursor: pointer;
  opacity: 1;
+ transition: 100ms ease-in;
 }
 
 .e66e:hover {
   background: #323232;
   cursor: pointer;
   opacity: 1;
+  transition: 100ms ease-in;
 }
 
 .container:hover .opacity-layer {
   background-color: rgba(0, 0, 2, .52);
   opacity: 1;
+  transition: 100ms ease-in;
 }
 
 .container:hover .name-price {
   background: rgb(26, 188, 156);
   cursor: pointer;
+  transition: 10ms;
 }
 
 footer {
   position: relative;
   width: 100%;
-  height: 5.5rem;
+  height: 88px;
   text-align: center;
   background-color: #323232;
   font-family: "Open Sans";
   color: #fefefe;
-  font-size: 1rem;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 5rem;
+  line-height: 80px;
   overflow: hidden;
   z-index: 5;
 }
