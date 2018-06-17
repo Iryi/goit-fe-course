@@ -165,16 +165,17 @@ h2 {
   color: #bbbbbb;
 }
 
-.user__name:valid,
-.user__email:valid, 
+.user__name:focus:valid,
+.user__email:focus:valid, 
 .textarea:valid {
-   outline: green;
+   outline: 2px solid green;
+
 }
 
-.user__name:invalid,
-.user__email:invalid, 
-.textarea:invalid {
-  outline: red;
+.user__name:focus:invalid,
+.user__email:focus:invalid, 
+.textarea:focus:invalid {
+  outline: 2px solid red;
 }
 
 .button {

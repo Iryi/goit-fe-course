@@ -1,10 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat|Montserrat+Subrayada|Roboto');
 @import url('./normalize.css');
 
-body {
-  margin: 0 360px;
-  width: 1200px;
-  height: 100vh;
+.wrapper {
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .site-navigation { 
@@ -58,7 +57,7 @@ body {
   opacity: 1;
 }
 
-.main_content_wrapper {
+.main_content {
   display: flex;
   width: 100%;
   flex-wrap: wrap;
@@ -230,7 +229,8 @@ ul.opacity-icons li:hover {
 
 footer {
   display: flex;
-  margin: 150px 0 0 0;
+  max-width: 1200px;
+  margin: 150px auto 0;
   padding: 15px 0;
   justify-content: space-between;
   align-items: center;
