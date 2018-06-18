@@ -21,9 +21,9 @@
   .Logo {
     position: absolute;
     top: 170px;
-    left: 71px;
+    left: 50%;
+    transform: translateX(-50%);
     content: url('../img/Logo.png');
-    padding: 171px auto 35px;
   }
   
   .login,
@@ -48,11 +48,12 @@
   }
 
   .introduction_content {
-    display: flex;
     flex-wrap: wrap;
     align-items: center;
     position: relative;
     top: 170px;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .red_button {
@@ -212,7 +213,10 @@
   .Logo {
     position: absolute;
     top: 20px;
+    left: 0;
+    transform: translateX(0);
     content: url('../img/Logo.png');
+    padding-left: 40px;
   }
 
   .login,
@@ -285,9 +289,7 @@
   }
 
   .introduction_content {
-    display: flex;
     width: 600px;
-	  margin: 0 auto;
   }
 
   .partners_list {
